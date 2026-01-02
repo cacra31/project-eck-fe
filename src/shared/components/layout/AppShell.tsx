@@ -9,21 +9,10 @@ export default function AppShell() {
         <Box minH="100vh" bg="gray.50">
             <Drawer.Root placement="start">
                 {/* Topbar */}
-                <Flex
-                    as="header"
-                    h={TOPBAR_H}
-                    bg="white"
-                    borderBottomWidth="1px"
-                    align="center"
-                    px={4}
-                    justify="space-between"
-                >
+                <Flex as="header" h={TOPBAR_H} bg="white" borderBottomWidth="1px" align="center" px={4} justify="space-between">
                     <HStack gap={2} align="center">
                         <Drawer.Trigger asChild>
-                            <IconButton
-                                variant="ghost"
-                                display={{ base: "inline-flex", md: "none" }}
-                            >
+                            <IconButton variant="ghost" display={{ base: "inline-flex", md: "none" }}>
                                 <Text fontSize="lg">☰</Text>
                             </IconButton>
                         </Drawer.Trigger>
@@ -52,7 +41,6 @@ export default function AppShell() {
                     >
                         <SideBar />
                     </Box>
-
                     {/* Main */}
                     <Box as="main" flex="1" p={4}>
                         <Box bg="white" borderWidth="1px" rounded="md" p={4} minH="100%">
