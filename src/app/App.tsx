@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Text } from "@chakra-ui/react";
-import AppShell from "../shared/components/layout/AppShell";
-import NotFoundPage from "../pages/NotFoundPage";
+import AppShell from "@/shared/components/layout/AppShell";
+import NotFoundPage from "@/pages/NotFoundPage";
+
 
 function HomePage() {
   return <Text></Text>;

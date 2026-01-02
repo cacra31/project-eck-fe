@@ -1,7 +1,8 @@
 import { Box, Flex, HStack, Text, IconButton, Drawer } from "@chakra-ui/react";
-import { ENV } from "../../lib/env";
+import { ENV } from "@/shared/lib/env";
 import { Outlet } from "react-router-dom";
 import SideBar from "./SideBar";
+
 const TOPBAR_H = "56px";
 
 export default function AppShell() {
